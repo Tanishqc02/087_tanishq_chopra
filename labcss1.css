@@ -1,0 +1,125 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f2f5;
+  }
+  
+  /* Section Styling */
+  section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(to right, #e5ab46, #f6893b);
+    color: white;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 20px;
+  }
+  
+  /* About, Skills, Projects, Contact */
+  .about, .skills, .projects, .contact {
+    background: white;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    padding: 40px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Skills List */
+  .skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .skills li {
+    background: linear-gradient(to right,  #e5ab46, #f6893b );
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+  
+  /* Projects Section */
+  .project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .card {
+    background-color: #f4d2b7;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  
+  /* Contact Form */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #e58346;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #ca6b38;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .project-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
